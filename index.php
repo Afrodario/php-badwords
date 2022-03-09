@@ -1,11 +1,9 @@
 <?php
 $testo = "Da un grande potere derivano grandi responsabilità";
 
-$parolaCensurata = "potere";
+$parolaCensurata = $_GET['parolaccia'];
 
 $censura = "***";
-
-$_GET[$parolaCensurata];
 
 $testoModificato = str_replace($parolaCensurata, $censura, $testo);
 
